@@ -25,6 +25,7 @@ nav {
     display: flex;
     gap: 2em;
 }
+
 .logo img {
     height: 50px;
 }
@@ -87,6 +88,7 @@ nav {
 }
 
 .bannerimg img {
+    object-fit: cover;
     width: 100%;
 }
 
@@ -95,7 +97,7 @@ nav {
     position: absolute;
     top: 50%;
     left: 50%;
-    color: white;
+    color: whitesmoke;
     text-align: center;
     transform: translate(-50%, -50%);
 }
@@ -125,6 +127,7 @@ nav {
     }
 
     30% {
+        color: #03346E;
         letter-spacing: 25px;
         margin-bottom: -40px;
     }
@@ -247,9 +250,10 @@ nav {
     justify-content: center;
 }
 
-.product-variety{
+.product-variety {
     color: #3d699b;
 }
+
 .iconbg {
     gap: 13px;
     display: flex;
@@ -268,15 +272,16 @@ i#fouricon {
     background-color: #ababab6b;
 }
 
-.Buyers h2{
+.Buyers h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 30px;
     color: #03346E;
 }
-.Buyers p{
-    margin:2em ;
-    line-height:1.6em ;
+
+.Buyers p {
+    margin: 2em;
+    line-height: 1.6em;
 }
 
 .partners-section {
@@ -320,7 +325,6 @@ i#fouricon {
 .partner-logo img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
 }
 
 .chooseus {
@@ -442,6 +446,34 @@ i#fouricon {
     border-radius: 50px;
 }
 
+.more-enquery {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 15px 0px;
+    font-size: 40px;
+    color: #884A33;
+}
+
+.more-enquery button {
+    color: white;
+    border: none;
+    padding: 13px;
+    font-size: 15px;
+    font-size: 14px;
+    background-color: #03346E;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.more-enquery button:hover {
+    background: linear-gradient(45deg, #262525, #6c6a69, #453336);
+    color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    border-color: transparent;
+}
+
 .sample {
     position: relative;
     margin-top: 5em;
@@ -451,7 +483,8 @@ i#fouricon {
     width: 100%;
     height: 300px;
 }
-.sample-request-btn{
+
+.sample-request-btn {
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
@@ -460,9 +493,15 @@ i#fouricon {
     cursor: pointer;
     font-size: 16px;
 }
+
 .sample-request-btn:hover {
     background-color: #0056b3;
+    background: linear-gradient(45deg, #262525, #6c6a69, #453336);
+    color: #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    border-color: transparent;
 }
+
 .samplecontent {
     color: white;
     position: absolute;
@@ -487,6 +526,7 @@ i#fouricon {
     border: none;
     cursor: pointer;
 }
+
 
 .whatsapp {
     cursor: pointer;
@@ -694,9 +734,11 @@ i#fouricon {
         height: 350px;
         border-radius: 50px;
     }
+
     .abtus img {
         width: 339px;
     }
+
     .abouticon {
         flex-direction: column;
         gap: 3em;
@@ -733,6 +775,11 @@ i#fouricon {
     .samplecontent button {
         font-size: 10px;
         padding: 10px;
+    }
+
+    .more-enquery {
+        flex-direction: column;
+        font-size: 40px;
     }
 
     .footer {

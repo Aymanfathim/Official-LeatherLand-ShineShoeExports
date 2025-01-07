@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 <style>
     * {
@@ -31,6 +34,12 @@
     body {
         background-color: #e1e1e1;
         font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
     }
 
     nav {
@@ -42,10 +51,12 @@
         color: white;
         background-color: #021526;
     }
+
     .logo-section {
-    display: flex;
-    gap: 2em;
-}
+        display: flex;
+        gap: 2em;
+    }
+
     .logo img {
         height: 50px;
     }
@@ -122,6 +133,7 @@
     .gallery p a {
         color: white;
     }
+
     .bannerimg {
         position: relative;
     }
@@ -149,6 +161,11 @@
         font-weight: 600;
         letter-spacing: 5px;
         position: relative;
+    }
+
+    h3 {
+        font-size: 70.2px;
+        font-weight: 700;
     }
 
     .videosec h3 {
@@ -187,6 +204,12 @@
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .p-p {
+        width: 354px;
+        height: 260px;
+        margin: auto;
     }
 
     .card img {
@@ -229,6 +252,23 @@
 
     .width:hover {
         transform: scale(1.1);
+    }
+
+    .heading {
+        color: #884A33;
+        margin: 10px;
+        font-size: 45px;
+        font-family: "Rubik", sans-serif;
+    }
+
+    img.card-img-top {
+        height: 400px;
+    }
+
+    .sub-heading {
+        color: #03346E;
+        font-size: 40px;
+        margin: 12px;
     }
 
     .whatsapp {
@@ -737,7 +777,7 @@
             </button>
         </div>
         <div class="navright">
-            <a href="Form.html">    <img src="user (1).png" alt=""></a>
+            <a href="Form.html"> <img src="user (1).png" alt=""></a>
         </div>
     </nav>
     <section class="gallery">
@@ -758,7 +798,7 @@
     </div>
     <img src="gallerybanner-transformed.jpeg" alt="">
 
-    <div class="container">
+    <div class="container" id="products">
         <div class="card">
             <img src="crocoprint.jpg" alt="Image">
             <div class="overlay">
@@ -774,7 +814,7 @@
         <div class="card">
             <img src="mettique.jpg" alt="Image">
             <div class="overlay">
-                <h2>Cow Wter Proof Softy</h2>
+                <h2>Cow Water Proof Softy</h2>
             </div>
         </div>
         <div class="card">
@@ -815,6 +855,127 @@
         </div>
     </div>
 
+    <div class="container mt-5" id="none">
+        <h1 class="text-center heading">Explore the most popular Patterns and Prints on Leather</h1>
+        <h3 class="text-center sub-heading">Embossed Prints</h3>
+
+        <div id="cardSlider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card p-p">
+                                <img class="card-img-top" src="crocodile-print.jpg" alt="New York">
+                            </div>
+                            <h5 class="text-center mt-3">Crocodile Print </h5>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card p-p">
+                                <img class="card-img-top" src="faux-alligator-print.jpg" alt="Trip">
+                            </div>
+                            <h5 class="text-center mt-3">Alligator Print </h5>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card p-p">
+                                <img class="card-img-top" src="ostrich-print.jpg">
+                            </div>
+                            <h5 class="text-center mt-3">Ostrich Print </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-center  sub-heading">Textured Patterns</h3>
+
+        <div id="cardSlider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card p-p">
+                                <img class="card-img-top" src="pebbled-textured-leather.jpg" alt="New York">
+                            </div>
+                            <h5 class="text-center mt-3">Pebbled Textured Pattern </h5>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card p-p">
+                                <img class="card-img-top" src="grainy-pattern.jpg" alt="Trip">
+                            </div>
+                            <h5 class="text-center mt-3">Grainy Textured Pattern </h5>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card p-p">
+                                <img class="card-img-top" src="milled-leather.jpg">
+                            </div>
+                            <h5 class="text-center mt-3">Milled Pattern</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="text-center  sub-heading">Animal Prints</h3>
+
+    <div id="cardSlider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card p-p">
+                            <img class="card-img-top" src="leopard-print-tan-nubuck.jpg" alt="New York">
+                        </div>
+                        <h5 class="text-center mt-3">Leopard Print Tan Nubuck </h5>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-p">
+                            <img class="card-img-top" src="tiger-print.jpg" alt="Trip">
+                        </div>
+                        <h5 class="text-center mt-3">Tiger Print </h5>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-p">
+                            <img class="card-img-top" src="zebra-print-leather.jpg">
+                        </div>
+                        <h5 class="text-center mt-3">Zebra Print </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <h3 class="text-center  sub-heading">Vintage Effects</h3>
+
+    <div id="cardSlider" class="carousel slide text-center" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card p-p">
+                            <img class="card-img-top" src="burnished-leather.jpg" alt="New York">
+                        </div>
+                        <h5 class="text-center mt-3">Burnish Leather </h5>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-p">
+                            <img class="card-img-top" src="cracked-leather.jpg" alt="Trip">
+                        </div>
+                        <h5 class="text-center mt-3">Crackle Leather </h5>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-p">
+                            <img class="card-img-top" src="distressed-aniline-leather.jpg">
+                        </div>
+                        <h5 class="text-center mt-3">Distress Aniline Leather </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
     <!-- <footer> -->
     <div class="footer">
         <div class="whatsapp">
@@ -828,7 +989,7 @@
                 <a href="index.html">
                     <li>HOME</li>
                 </a>
-                <a href="about.html">
+                <a href="Index.html#SSEaboutus">
                     <li>ABOUT US</li>
                 </a>
                 <a href="Gallery.html">
@@ -842,26 +1003,38 @@
         <div class="mid-links">
             <ul>
                 <br>
-                <li>PRIVACY POLICY</li>
-                <li>PRODUCTS</li>
-                <li>CATEGORIES</li>
-                <li>TESTIMONIALS</li>
+                <a href="">
+                    <li>PRIVACY POLICY</li>
+                </a>
+                <a href="Gallery.html#products">
+                    <li>PRODUCTS</li>
+                </a>
+                <a href="Gallery.html#none">
+                    <li>CATEGORIES</li>
+                </a>
+                <a href="">
+                    <li>TESTIMONIALS</li>
+                </a>
             </ul>
         </div>
         <div class="f-contact">
             <h4>CONTACT</h4>
             <p>RP25+35F, Kandrampalli Road, Opposite to Perfect Shoe Fabric, Thutipet, Ambur, Tamil Nadu 635802</p>
             <h5 class="phoneno">+91-9790242880</h5>
-            <a href="https://www.justdial.com/Ambur/Leather-Land-Shine-Shoe-Exports-Opposite-to-Perfect-Shoe-Fabric/9999P4176-4176-180316144302-Y4C6_BZDET"> <h5 class="justdial">leatherlandshineshoes@justdial.com</h5></a>
+            <a
+                href="https://www.justdial.com/Ambur/Leather-Land-Shine-Shoe-Exports-Opposite-to-Perfect-Shoe-Fabric/9999P4176-4176-180316144302-Y4C6_BZDET">
+                <h5 class="justdial">leatherlandshineshoes@justdial.com</h5>
+            </a>
         </div>
         <div class="connect">
             <h4>CONNECT</h4>
             <div class="socialmedia">
                 <a href="https://facebook.com"><img class="connectslot" src="facebook.png" alt=""></a>
-                <a href="https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAB-FB4IBeEzsZ_jJCNAxkjBLQ2ZzRZLAtMg&keywords=USAIDULLAH%20KAKA&origin=ENTITY_SEARCH_HOME_HISTORY&sid=oz5"><img class="connectslot" src="linkedin.png" alt=""></a>
+                <a
+                    href="https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAB-FB4IBeEzsZ_jJCNAxkjBLQ2ZzRZLAtMg&keywords=USAIDULLAH%20KAKA&origin=ENTITY_SEARCH_HOME_HISTORY&sid=oz5"><img
+                        class="connectslot" src="linkedin.png" alt=""></a>
                 <a href="https://www.instagram.com/usaidullahkaka/"><img class="connectslot" src="instagram.png"
                         alt=""></a>
-                <a href="https://twitter.com"><img class="connectslot" src="twitter.png" alt=""></a>
             </div>
         </div>
     </div>
