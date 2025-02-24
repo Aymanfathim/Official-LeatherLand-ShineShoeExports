@@ -300,7 +300,6 @@ i#fouricon {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
 }
 
 .partner-card {
@@ -308,10 +307,8 @@ i#fouricon {
     border: 2px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    width: 250px;
     text-align: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -671,8 +668,8 @@ i#fouricon {
         }
 
         30% {
-            color: gray;
-            letter-spacing: 11px;
+            color: firebrick;
+            letter-spacing: 10px;
             margin-bottom: -40px;
         }
 
@@ -683,7 +680,7 @@ i#fouricon {
     }
 
     .bannertitle .text1 {
-        font-size: 13px;
+        font-size: 21px;
     }
 
     .bannertitle .text2 {
@@ -763,6 +760,10 @@ i#fouricon {
         border-radius: 50px;
     }
 
+    .partner-card {
+        flex-direction: column;
+    }
+
     .sample img {
         height: 8em;
     }
@@ -823,6 +824,7 @@ i#fouricon {
     .bannerimg {
         height: auto;
     }
+    
 
     @keyframes text {
         0% {
@@ -859,8 +861,8 @@ i#fouricon {
     }
 
     .container p {
-        font-size: 29px;
-        line-height: 1em;
+        font-size: 25px;
+        line-height: 1.2em;
     }
 
     .abtus {
@@ -880,7 +882,12 @@ i#fouricon {
 
     .abouticon {
         flex-direction: column;
+        align-items: center;
         gap: 1em;
+    }
+
+    .partner-card {
+        flex-direction: column;
     }
 
     .wrapper {
@@ -896,6 +903,9 @@ i#fouricon {
     .shoe img {
         display: flex;
         margin: auto;
+    }
+    .Buyers p {
+        font-size: 25px;
     }
 
     .samplecontent p {
@@ -964,8 +974,8 @@ i#fouricon {
         }
 
         30% {
-            color: rgb(86, 82, 82);
-            letter-spacing: 14px;
+            color: firebrick;
+            letter-spacing: 19px;
             margin-bottom: -40px;
         }
 
@@ -1010,7 +1020,12 @@ i#fouricon {
 
     .abouticon {
         flex-direction: column;
+        align-items: center;
         gap: 2em;
+    }
+
+    .partner-card {
+        flex-direction: column;
     }
 
     .wrapper {
@@ -1138,7 +1153,23 @@ i#fouricon {
         flex-direction: column;
         gap: 2em;
     }
-
+    @keyframes text {
+        0% {
+            color: black;
+            margin-bottom: -40%;
+        }
+    
+        30% {
+            color: #03346E;
+            letter-spacing: 13px;
+            margin-bottom: -40px;
+        }
+    
+        85% {
+            letter-spacing: 8px;
+            margin-bottom: 40px;
+        }
+    }
     .wrapper {
         padding: 3em;
     }
